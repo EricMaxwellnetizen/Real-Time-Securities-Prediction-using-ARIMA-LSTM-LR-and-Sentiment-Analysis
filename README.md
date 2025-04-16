@@ -37,7 +37,7 @@ Stock Market Prediction Web App based on Machine Learning and Sentiment Analysis
 ## 📦 Installation
 
 1. Clone the repository
-'''
+'''cmd
 git clone https://github.com/yourusername/stock-prediction-app.git
 cd stock-prediction-app
 '''
