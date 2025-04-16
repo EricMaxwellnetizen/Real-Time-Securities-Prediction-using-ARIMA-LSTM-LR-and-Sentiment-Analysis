@@ -1,5 +1,7 @@
 # 📈 Real-Time-Securities-Prediction-using-ARIMA-LSTM-LR-and-Sentiment-Analysis
 
+Welcome to Dr Q. P. ! 
+
 Stock Market Prediction Web App based on Machine Learning and Sentiment Analysis of Tweets (API keys included in code). The front end of the Web App is based on Flask. The App forecasts stock prices of the next seven days for any given stock under NASDAQ or NSE as input by the user. Predictions are made using ARIMA (Autoregressive Integrated Moving Average), LSTM (Long Short-Term Memory), Linear Regression, and Sentiment Analysis. The Web App combines the predicted prices of the next seven days with the sentiment analysis of tweets to give recommendation whether the price is going to rise or fall.
 
 ## 🌟 Features
@@ -72,11 +74,23 @@ class Config:
 ---
 ## 📸 Screenshots
 
+> - Home Page
+<img src='pics\home1.png'>
+
+> - Search with the Stock ticker symbol
 <img src='pics\Predict-search.png'>
 
-> - Signup/login page
 > - Results page with predictions and graphs
-> - Sentiment pie chart (if enabled)
+<img src='pics\result.png'>
+
+> - About us
+<img src='pics\aboutus1.png'>
+
+> - Contact us
+<img src='pics\contactus-search.png'>
+
+> - Signup/login page
+<img src='pics\login.png'>
 
 ---
 
