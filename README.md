@@ -1,7 +1,5 @@
 # 📈 Real-Time-Securities-Prediction-using-ARIMA-LSTM-LR-and-Sentiment-Analysis
 
-Welcome to Dr Q. P. ! 
-
 Stock Market Prediction Web App based on Machine Learning and Sentiment Analysis of Tweets (API keys included in code). The front end of the Web App is based on Flask. The App forecasts stock prices of the next seven days for any given stock under NASDAQ or NSE as input by the user. Predictions are made using ARIMA (Autoregressive Integrated Moving Average), LSTM (Long Short-Term Memory), Linear Regression, and Sentiment Analysis. The Web App combines the predicted prices of the next seven days with the sentiment analysis of tweets to give recommendation whether the price is going to rise or fall.
 
 ## 🌟 Features
@@ -37,23 +35,21 @@ Stock Market Prediction Web App based on Machine Learning and Sentiment Analysis
 ## 📦 Installation
 
 1. Clone the repository
-'''python
 git clone https://github.com/yourusername/stock-prediction-app.git
 cd stock-prediction-app
-'''
 
 3. Create virtual environment
-'''python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate'''
+ -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 4. Install dependencies
-'''pip install -r requirements.txt'''
+pip install -r requirements.txt
 
 5. Set up environment variables (in .env or directly in config.py)
 Flask-Mail, Twitter API keys, Secret key, etc.
 
 6. Run the app
-'''python main.py'''
+python main.py
 
 ---------------
 
@@ -87,9 +83,6 @@ class Config:
 
 > - About us
 <img src='pics\aboutus1.png'>
-
-> - Contact us
-<img src='pics\contactus.png'>
 
 > - Signup/login page
 <img src='pics\login.png'>
@@ -130,6 +123,8 @@ cat("ML", "SWE", "datascience", sep=" ∩ ")
 [Linkedin](https://www.linkedin.com/in/simon-anandan/)
 
 [Github](https://github.com/EricMaxwellnetizen?tab=repositories)
+
+simonanandan33@gmail.com
 
 
 
