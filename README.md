@@ -72,7 +72,8 @@ class Config:
 ---
 ## 📸 Screenshots
 
-> Add screenshots of:
+<img src='Predict-search.png'>
+
 > - Signup/login page
 > - Results page with predictions and graphs
 > - Sentiment pie chart (if enabled)
@@ -99,6 +100,7 @@ Autonomous Quantum Financial Omniscient Network: Self-Evolving, Multimodal, Quan
 (ISBN No : 978-93-48733-42-9)
 
 https://drive.google.com/file/d/1aei4qoXQzg36ATs3hNix6mrvRZm6l5a8/view?usp=sharing
+
 https://drive.google.com/file/d/1yuhGEEqc-FelKFLdqaNysflez5UEYnoL/view?usp=sharing
 
 
