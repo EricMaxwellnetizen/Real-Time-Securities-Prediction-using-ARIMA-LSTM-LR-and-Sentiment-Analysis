@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Q P Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f7fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .overview-card {
+      border-radius: 15px;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .overview-card:hover {
+      transform: translateY(-5px);
+    }
+    .prediction-chart {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">Dr Q P</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/predict">Predict</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="mb-4">Welcome to Your Dashboard</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="overview-card">
+          <h5>Market Trend</h5>
+          <p class="text-success">Bullish</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="overview-card">
+          <h5>Top Pick</h5>
+          <p>TSLA 📈 Buy</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="overview-card">
+          <h5>AI Confidence</h5>
+          <p>89%</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="overview-card">
+          <h5>Last Updated</h5>
+          <p>3 mins ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-5 prediction-chart">
+      <h4>Stock Prediction</h4>
+      <form class="row g-3 mb-4">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Enter Ticker (e.g. AAPL)" required>
+        </div>
+        <div class="col-md-4">
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary w-100">Predict</button>
+        </div>
+      </form>
+      <canvas id="chart"></canvas>
+    </div>
+
+    <div class="table-responsive">
+      <h4>AI Recommendations</h4>
+      <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>Ticker</th>
+            <th>Prediction</th>
+            <th>Model</th>
+            <th>Confidence</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <td>AAPL</td>
+            <td>$202.33</td>
+            <td>LSTM</td>
+            <td>91%</td>
+            <td>Buy</td>
+          </tr>
+          <tr class="table-danger">
+            <td>GOOG</td>
+            <td>$118.90</td>
+            <td>ARIMA</td>
+            <td>79%</td>
+            <td>Sell</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('chart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+        datasets: [{
+          label: 'Predicted Price',
+          data: [150, 153, 149, 155, 158],
+          borderColor: 'rgba(75, 192, 192, 1)',
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          fill: true,
+          tension: 0.4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'top' } },
+        scales: {
+          y: { beginAtZero: false }
+        }
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
