@@ -72,7 +72,7 @@ class Config:
 ---
 ## 📸 Screenshots
 
-<img src='Predict-search.png'>
+<img src='pics\Predict-search.png'>
 
 > - Signup/login page
 > - Results page with predictions and graphs
