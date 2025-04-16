@@ -37,20 +37,22 @@ Stock Market Prediction Web App based on Machine Learning and Sentiment Analysis
 ## 📦 Installation
 
 1. Clone the repository
-''' git clone https://github.com/yourusername/stock-prediction-app.git
-cd stock-prediction-app'''
+'''
+git clone https://github.com/yourusername/stock-prediction-app.git
+cd stock-prediction-app
+'''
 
-2. Create virtual environment
+3. Create virtual environment
 '''python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate'''
 
-3. Install dependencies
+4. Install dependencies
 '''pip install -r requirements.txt'''
 
-4. Set up environment variables (in .env or directly in config.py)
+5. Set up environment variables (in .env or directly in config.py)
 Flask-Mail, Twitter API keys, Secret key, etc.
 
-5. Run the app
+6. Run the app
 '''python main.py'''
 
 ---------------
