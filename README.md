@@ -104,9 +104,13 @@ https://drive.google.com/file/d/1yuhGEEqc-FelKFLdqaNysflez5UEYnoL/view?usp=shari
 
 ## 🧑‍💻 Developed By
 
-**Simon Anandan** - cat("ML", "SWE", "datascience", sep=" ∩ ")
-''# Changing the world one commit at a time
+**Simon Anandan** 
+
+cat("ML", "SWE", "datascience", sep=" ∩ ")
+'# Changing the world one commit at a time'
+
 [Linkedin](https://www.linkedin.com/in/simon-anandan/)
+
 [Github](https://github.com/EricMaxwellnetizen?tab=repositories)
 
 
