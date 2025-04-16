@@ -1,4 +1,5 @@
 # 📈 Real-Time-Securities-Prediction-using-ARIMA-LSTM-LR-and-Sentiment-Analysis
+
 Stock Market Prediction Web App based on Machine Learning and Sentiment Analysis of Tweets (API keys included in code). The front end of the Web App is based on Flask. The App forecasts stock prices of the next seven days for any given stock under NASDAQ or NSE as input by the user. Predictions are made using ARIMA (Autoregressive Integrated Moving Average), LSTM (Long Short-Term Memory), Linear Regression, and Sentiment Analysis. The Web App combines the predicted prices of the next seven days with the sentiment analysis of tweets to give recommendation whether the price is going to rise or fall.
 
 ## 🌟 Features
@@ -33,21 +34,21 @@ Stock Market Prediction Web App based on Machine Learning and Sentiment Analysis
 
 ## 📦 Installation
 
-### 1. Clone the repository
+1. Clone the repository
 git clone https://github.com/yourusername/stock-prediction-app.git
 cd stock-prediction-app
 
-### 2. Create virtual environment
+2. Create virtual environment
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Set up environment variables (in .env or directly in config.py)
-# Flask-Mail, Twitter API keys, Secret key, etc.
+4. Set up environment variables (in .env or directly in config.py)
+Flask-Mail, Twitter API keys, Secret key, etc.
 
-# 5. Run the app
+5. Run the app
 python main.py
 
 ---------------
@@ -90,9 +91,6 @@ Pull requests are welcome. Feel free to fork and submit improvements or feature 
 
 ---
 
-## 🧑‍💻 Developed By
-
-**Simon** – Passionate about data science, stock markets, and AI-powered apps.
 
 
 ## Project is based on my research paper:
@@ -104,8 +102,10 @@ https://drive.google.com/file/d/1aei4qoXQzg36ATs3hNix6mrvRZm6l5a8/view?usp=shari
 https://drive.google.com/file/d/1yuhGEEqc-FelKFLdqaNysflez5UEYnoL/view?usp=sharing
 
 
-# Author
-Simon Anandan
+## 🧑‍💻 Developed By
+
+**Simon Anandan** - cat("ML", "SWE", "datascience", sep=" ∩ ")
+''# Changing the world one commit at a time
 [Linkedin](https://www.linkedin.com/in/simon-anandan/)
 [Github](https://github.com/EricMaxwellnetizen?tab=repositories)
 
