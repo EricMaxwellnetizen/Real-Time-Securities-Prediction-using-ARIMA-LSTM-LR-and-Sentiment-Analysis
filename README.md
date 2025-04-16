@@ -33,11 +33,11 @@ Stock Market Prediction Web App based on Machine Learning and Sentiment Analysis
 
 ## 📦 Installation
 
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/yourusername/stock-prediction-app.git
 cd stock-prediction-app
 
-# 2. Create virtual environment
+### 2. Create virtual environment
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
